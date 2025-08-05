@@ -20,11 +20,11 @@ function mostrarTexto(secao) {
 let audio;
 function playAudio() {
   audio = document.getElementById("myAudio");
-  x.play();
+  audio.play();
 }
 function pauseAudio() {
   audio = document.getElementById("myAudio");
-  x.pause();
+  audio.pause();
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -130,4 +130,5 @@ function expandirProjeto(nome) {
 }
 
 // termina carrossel //
+
 

@@ -74,8 +74,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }, delay);
   }
 
-  btnSobre.addEventListener("click", () => {
-    if (escrevendo) return;
+ // btnSobre.addEventListener("click", () => {
+  //  if (escrevendo) return;
 
     textoHabilidades.classList.add("oculto");
     textoSobre.classList.remove("oculto");
@@ -131,6 +131,7 @@ function expandirProjeto(nome) {
 }
 
 // termina carrossel //
+
 
 
 

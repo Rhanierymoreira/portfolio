@@ -19,6 +19,7 @@ function mostrarTexto(secao) {
 
 
 function playAudio() {
+  console.log("Botao clicado");
   let audio = document.getElementById("myAudio");
   audio.play();
 }
@@ -130,6 +131,7 @@ function expandirProjeto(nome) {
 }
 
 // termina carrossel //
+
 
 
 

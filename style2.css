@@ -1,0 +1,240 @@
+body {
+  background-color: rgb(0, 0, 0);
+  color: gray;
+  text-align: center;
+}
+
+.hero-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin-bottom: 65px;
+}
+
+.fundo-portfolio {
+  position: absolute;
+  font-family: "Epilogue", sans-serif;
+  font-size: 100px;
+  color: rgba(254, 254, 254, 0.322); /* opaco para fundo */
+  font-weight: 900;
+  text-transform: uppercase;
+  z-index: 1;
+  margin-left: 70px;
+  animation: slideInRight 1s ease-out forwards;
+  animation-delay: 0s;
+}
+
+.fundo-portfolio:hover {
+  opacity: 0.7; /* ou qualquer outro efeito que prefira */
+  color: #f3f4f5;
+}
+
+.epilogue-bold-purple {
+  font-family: "Epilogue", sans-serif;
+  color: purple;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 28px;
+  margin-bottom: 100px;
+  margin-right: 200px;
+  animation: slideInLeft 1s ease-out forwards;
+  animation-delay: 0s;
+}
+
+.link-projetos {
+  color: purple;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link-projetos:hover {
+  color: #f3f4f5;
+}
+
+.epilogue-light {
+  font-family: "Epilogue", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 28px;
+}
+
+.epilogue-bold {
+  font-family: "Epilogue", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 28px;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.oculto {
+  display: none;
+}
+
+.botao-sobre {
+  cursor: pointer;
+  color: inherit; /* herdando a cor padrão, como um texto comum */
+  text-decoration: none;
+  color: purple;
+}
+.botao-sobre:hover {
+  opacity: 0.7; /* ou qualquer outro efeito que prefira */
+  color: #f3f4f5;
+}
+
+.botao {
+  background-color: #222;
+  border: none;
+  color: purple;
+  padding: 15px;
+  font-size: 6px;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.8s ease;
+}
+
+.botao:hover {
+  background-color: #444;
+}
+
+.material-icons {
+  vertical-align: middle;
+}
+
+.interacao {
+  font-family: "Epilogue", sans-serif;
+  color: rgb(255, 252, 255);
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 28px;
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.photo-interacao {
+  display: flex;
+  align-items: center; /* alinha verticalmente ao centro */
+  justify-content: center; /* centraliza horizontalmente */
+  gap: 40px; /* espaço entre imagem e texto */
+  margin-bottom: 40px;
+  flex-wrap: wrap; /* opcional: quebra em telas pequenas */
+}
+
+.photo img {
+  max-width: 250px;
+  height: auto;
+  transition: transform 0.3s ease; /* suaviza a animação */
+}
+
+.interacao {
+  text-align: left; /* ou center, se quiser centralizar o texto dentro da div */
+}
+
+.photo img:hover {
+  transform: scale(1.1); /* aumenta 10% ao passar o mouse */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  color: white;
+  animation: piscar 0.7s infinite;
+}
+
+@keyframes piscar {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.space {
+  margin: 150px;
+}
+
+/* Espaçamento entre seções */
+.espaco-secao {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+/* Carrossel */
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.carousel-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Área expandida */
+.projeto-expandido {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projeto-expandido img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}

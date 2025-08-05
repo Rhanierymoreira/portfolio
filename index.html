@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="icon/favicon-16x16.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <audio id="myAudio">
+      <source src="racionais.mp3" type="audio/mpeg" />
+      Seu navegador não possui suporte ao elemento audio
+    </audio>
+    <!-- Botão de Play -->
+    <button class="botao" onclick="playAudio()">
+      <span class="material-icons">play_arrow</span>
+    </button>
+
+    <!-- Botão de Pause -->
+    <button class="botao" onclick="pauseAudio()">
+      <span class="material-icons">pause</span>
+    </button>
+
+    <div class="hero-container">
+      <h1 class="fundo-portfolio">Portfólio</h1>
+      <div class="epilogue-bold-purple">Sejam bem vindos ao meu</div>
+    </div>
+
+    <div class="photo-interacao">
+      <div class="photo">
+        <img
+          width="250px"
+          src="photo.png"
+          alt="Rhaniery Moreira"
+          title="Rhaniery Moreira"
+        />
+      </div>
+
+      <div class="interacao">
+        <span id="texto-digitando"></span><span class="cursor">|</span>
+      </div>
+    </div>
+    <div class="space"></div>
+    <section class="epilogue-bold botao-sobre" onclick="mostrarTexto('sobre')">
+      Sobre mim
+    </section>
+
+    <section id="texto-sobre" class="epilogue-light oculto">
+      <!-- conteúdo do texto sobre -->
+      Meu nome é Rhaniery Moreira, tenho 30 anos e sou um estudante dedicado de
+      desenvolvimento front-end, atualmente cursando Programador Web pelo SENAC.
+      Estou construindo minha base com HTML, CSS e JavaScript, explorando a
+      lógica da programação para entender a fundo o funcionamento das aplicações
+      web. Sou uma pessoa curiosa, comunicativa e colaborativa, sempre buscando
+      aprender mais e enfrentar novos desafios. Acredito que a programação é uma
+      ferramenta poderosa para criar experiências significativas e me envolver
+      de corpo e alma na jornada de evolução. Estou trilhando esse caminho com
+      foco e paixão, preparado para transformar conhecimento em soluções
+      práticas e criativas.
+    </section>
+    <div class="espaco-secao"></div>
+    <section
+      class="epilogue-bold botao-sobre"
+      onclick="mostrarTexto('habilidades')"
+    >
+      Habilidades
+    </section>
+    <section id="texto-habilidades" class="epilogue-light oculto">
+      <!-- conteúdo do texto habilidades -->
+      Tenho conhecimento em desenvolvimento web com código puro (vanilla),
+      utilizando HTML, CSS e JavaScript, além de estar estudando lógica de
+      programação para aprimorar minhas bases. Pretendo evoluir para frameworks
+      modernos após consolidar esse conhecimento essencial. No campo do design e
+      multimídia, trabalho com Photoshop, CorelDRAW e estou aprendendo Adobe
+      Premiere. Já criei logotipos, banners, flyers e vídeos com cortes básicos,
+      combinando estética visual e funcionalidade. Também tenho familiaridade
+      com boas práticas de organização de código e busco aprofundar o uso de
+      ferramentas como Git e GitHub para versionamento e colaboração. Minhas
+      principais soft skills são criatividade, comunicação e curiosidade.
+      Aprendo de forma autodidata por meio de tutoriais e aulas, o que me
+      permite absorver novos conhecimentos com agilidade e aplicar soluções
+      práticas de forma contínua.
+    </section>
+    <div class="espaco-secao"></div>
+    <section
+      class="epilogue-bold botao-sobre"
+      onclick="mostrarTexto('projetos')"
+    >
+      Meus Projetos
+    </section>
+    <section id="texto-projetos" class="epilogue-light">
+      <div class="carousel">
+        <div class="carousel-item" onclick="expandirProjeto('petshop')">
+          <img src="petshop.png" alt="Projeto Petshop" />
+        </div>
+        <div class="carousel-item" onclick="expandirProjeto('console')">
+          <img src="console.png" alt="Projeto Console" />
+        </div>
+        <div class="carousel-item" onclick="expandirProjeto('numeropar')">
+          <img src="numeropar.png" alt="Projeto Número Par" />
+        </div>
+        <div class="carousel-item" onclick="expandirProjeto('numerosecreto')">
+          <img src="numerosecreto.png" alt="Projeto Número Secreto" />
+        </div>
+        <div class="carousel-item" onclick="expandirProjeto('canaltech')">
+          <img src="canaltech.png" alt="Projeto Canaltech" />
+        </div>
+      </div>
+      <div id="projeto-expandido" class="projeto-expandido oculto"></div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -16,8 +16,11 @@
   </head>
 
   <body>
-    <audio id="myAudio" src="racionais.mp3" type="audio/mp3">
+    <audio id="myAudio" loop>
+      <source src="racionais.mp3" type="audio/mp3">
+      <source src="hado.ogg" type="audio/ogg">
       Seu navegador não possui suporte ao elemento audio
+      <code>audio</code>
     </audio>
 
     <!-- Botão de Play -->
@@ -121,6 +124,7 @@
     <script src="script.js"></script>
   </body>
 </html>
+
 
 
 

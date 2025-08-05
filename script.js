@@ -19,14 +19,19 @@ function mostrarTexto(secao) {
 
 
 function playAudio() {
-  console.log("Botao clicado");
   let audio = document.getElementById("myAudio");
   audio.play();
 }
+
 function pauseAudio() {
   let audio = document.getElementById("myAudio");
   audio.pause();
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  // outras coisas que precisam esperar o DOM carregar
+});
+
 
 document.addEventListener("DOMContentLoaded", function () {
   let btnSobre = document.getElementById("btn-sobre");
@@ -131,6 +136,7 @@ function expandirProjeto(nome) {
 }
 
 // termina carrossel //
+
 
 
 

@@ -17,12 +17,13 @@ function mostrarTexto(secao) {
 
 // audio abaixo //
 
+let audio;
 function playAudio() {
-  let x = document.getElementById("myAudio");
+  audio = document.getElementById("myAudio");
   x.play();
 }
 function pauseAudio() {
-  let x = document.getElementById("myAudio");
+  audio = document.getElementById("myAudio");
   x.pause();
 }
 
@@ -129,3 +130,4 @@ function expandirProjeto(nome) {
 }
 
 // termina carrossel //
+

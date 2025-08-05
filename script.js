@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
     textoHabilidades.classList.add("oculto");
     textoSobre.classList.remove("oculto");
 
-    let texto = `Meu nome é Rhaniery Moreira, tenho 30 anos e sou um estudante dedicado de desenvolvimento front-end, 
+    let texto1 = `Meu nome é Rhaniery Moreira, tenho 30 anos e sou um estudante dedicado de desenvolvimento front-end, 
     atualmente cursando Programador Web pelo SENAC. Estou construindo minha base com HTML, CSS e JavaScript,
     explorando a lógica da programação para entender a fundo o funcionamento das aplicações web.
 
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
     Acredito que a programação é uma ferramenta poderosa para criar experiências significativas e me envolver de corpo e alma na jornada de evolução.
     Estou trilhando esse caminho com foco e paixão, preparado para transformar conhecimento em soluções práticas e criativas.`;
 
-    escreverTexto(textoSobre, texto, 1); // Altere 25 para controlar a velocidade
+    escreverTexto(textoSobre, texto1, 1); // Altere 25 para controlar a velocidade
   });
 
   btnHabilidades.addEventListener("click", () => {
@@ -131,6 +131,7 @@ function expandirProjeto(nome) {
 }
 
 // termina carrossel //
+
 
 
 

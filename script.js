@@ -1,10 +1,10 @@
 // sobre e habilidades //
 
 function mostrarTexto(secao) {
-  const secoes = ["sobre", "habilidades"];
+  let secoes = ["sobre", "habilidades"];
 
   secoes.forEach((id) => {
-    const elemento = document.getElementById(`texto-${id}`);
+    let elemento = document.getElementById(`texto-${id}`);
     if (id === secao) {
       elemento.classList.toggle("oculto"); // alterna visibilidade
     } else {
@@ -29,22 +29,22 @@ function pauseAudio() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const btnSobre = document.getElementById("btn-sobre");
-  const btnHabilidades = document.getElementById("btn-habilidades");
-  const textoSobre = document.getElementById("texto-sobre");
-  const textoHabilidades = document.getElementById("texto-habilidades");
+  let btnSobre = document.getElementById("btn-sobre");
+  let btnHabilidades = document.getElementById("btn-habilidades");
+  let textoSobre = document.getElementById("texto-sobre");
+  let textoHabilidades = document.getElementById("texto-habilidades");
 
   // termina audio aqui //
 
   // Texto eu sou Rhaniery Moreira comeca aqui //
 
-  const texto = "Olá mundo,\n eu sou o Rhaniery Moreira. ";
-  const elemento = document.getElementById("texto-digitando");
+  let texto = "Olá mundo,\n eu sou o Rhaniery Moreira. ";
+  let elemento = document.getElementById("texto-digitando");
   let i = 0;
 
   function digitar() {
     if (i < texto.length) {
-      const char = texto.charAt(i);
+      let char = texto.charAt(i);
       elemento.innerHTML += char === "\n" ? "<br>" : char;
       i++;
       setTimeout(digitar, 80);
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
     escrevendo = true;
     let i = 0;
 
-    const intervalo = setInterval(() => {
+    let intervalo = setInterval(() => {
       if (i < texto.length) {
         elemento.textContent += texto.charAt(i);
         i++;
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
     textoHabilidades.classList.add("oculto");
     textoSobre.classList.remove("oculto");
 
-    const texto = `Meu nome é Rhaniery Moreira, tenho 30 anos e sou um estudante dedicado de desenvolvimento front-end, 
+    let texto = `Meu nome é Rhaniery Moreira, tenho 30 anos e sou um estudante dedicado de desenvolvimento front-end, 
     atualmente cursando Programador Web pelo SENAC. Estou construindo minha base com HTML, CSS e JavaScript,
     explorando a lógica da programação para entender a fundo o funcionamento das aplicações web.
 
@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
     textoSobre.classList.add("oculto");
     textoHabilidades.classList.remove("oculto");
 
-    const texto = `Tenho conhecimento em desenvolvimento web com código puro (vanilla), utilizando HTML, CSS e JavaScript,
+    let texto = `Tenho conhecimento em desenvolvimento web com código puro (vanilla), utilizando HTML, CSS e JavaScript,
     além de estar estudando lógica de programação para aprimorar minhas bases.
     Pretendo evoluir para frameworks modernos após consolidar esse conhecimento essencial.
 
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // carrossel //
 
 function mostrarTexto(id) {
-  const texto = document.getElementById(`texto-${id}`);
+  let texto = document.getElementById(`texto-${id}`);
   if (texto.classList.contains("oculto")) {
     texto.classList.remove("oculto");
   } else {
@@ -131,6 +131,7 @@ function expandirProjeto(nome) {
 }
 
 // termina carrossel //
+
 
 
 

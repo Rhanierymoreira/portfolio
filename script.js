@@ -125,12 +125,13 @@ function mostrarTexto(id) {
 }
 
 function expandirProjeto(nome) {
-  const container = document.getElementById("projeto-expandido");
+  let container = document.getElementById("projeto-expandido");
   container.innerHTML = `<img src="${nome}.png" alt="Projeto ${nome}" />`;
   container.classList.remove("oculto");
 }
 
 // termina carrossel //
+
 
 
 

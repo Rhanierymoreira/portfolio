@@ -115,7 +115,20 @@ document.addEventListener("DOMContentLoaded", function () {
 // ======== CARROSSEL ========
 
 function expandirProjeto(nome) {
+  const links = {
+    petshop: "https://rhanierymoreira.github.io/petshop/",
+    console: "https://rhanierymoreira.github.io/console",
+    numeropar: "https://rhanierymoreira.github.io/Numero-par-ou-impar/",
+    numerosecreto: "https://rhanierymoreira.github.io/Jogo-do-numero-secreto/",
+    canaltech: "https://rhanierymoreira.github.io/canaltech/"
+  };
+
   const container = document.getElementById("projeto-expandido");
-  container.innerHTML = `<img src="${nome}.png" alt="Projeto ${nome}" />`;
+  container.innerHTML = `
+    <a href="${links[nome]}" target="_blank">
+      <img src="${nome}.png" alt="Projeto ${nome}" />
+    </a>
+  `;
   container.classList.remove("oculto");
 }
+

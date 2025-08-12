@@ -253,7 +253,7 @@ body {
   .fundo-portfolio {
     font-size: 60px; /* diminui o tamanho do fundo */
     margin-left: 0; /* centraliza */
-    margin-top: 20px;
+    margin-top: 40px;
     text-align: center;
   }
 
@@ -275,5 +275,6 @@ body {
     font-size: 18px;
   }
 }
+
 
 

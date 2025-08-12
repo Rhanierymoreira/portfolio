@@ -22,6 +22,7 @@ body {
   text-transform: uppercase;
   z-index: 1;
   margin-left: 70px;
+  margin-top: 80px;
   animation: slideInRight 1s ease-out forwards;
   animation-delay: 0s;
 }
@@ -238,3 +239,4 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
+

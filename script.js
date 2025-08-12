@@ -105,8 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     Também tenho familiaridade com boas práticas de organização de código e busco aprofundar o uso de ferramentas como Git e GitHub para versionamento e colaboração.
 
-    Minhas principais soft skills são criatividade, comunicação e curiosidade.
-    Aprendo de forma autodidata por meio de tutoriais e aulas, o que me permite absorver novos conhecimentos com agilidade e aplicar soluções práticas de forma contínua.`;
+    Minhas principais soft skills são criatividade, comunicação, curiosidade e liderança, o que me permite absorver novos conhecimentos com agilidade e aplicar soluções práticas de forma contínua.`;
 
     escreverTexto(textoHabilidades, textoHabilidadesCompleto, 1);
   });
@@ -131,4 +130,5 @@ function expandirProjeto(nome) {
   `;
   container.classList.remove("oculto");
 }
+
 

@@ -253,13 +253,13 @@ body {
   .fundo-portfolio {
     font-size: 60px; /* diminui o tamanho do fundo */
     margin-left: 0; /* centraliza */
-    margin-top: 40px;
+    margin-top: 60px;
     text-align: center;
   }
 
   .epilogue-bold-purple {
     font-size: 22px; /* texto menor */
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     margin-right: 0; /* remove deslocamento */
     text-align: center;
   }
@@ -275,6 +275,7 @@ body {
     font-size: 18px;
   }
 }
+
 
 
 

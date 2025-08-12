@@ -241,53 +241,38 @@ body {
 }
 
 /* media queries */
-/* Telas até 768px (tablet e celular) */
+/* Ajuste para tablets e celulares */
 @media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column; /* empilha o conteúdo */
+    height: auto; /* altura automática */
+    margin-bottom: 40px;
+    padding: 20px;
+  }
+
   .fundo-portfolio {
-    font-size: 50px; /* menor que os 100px originais */
-    margin-left: 20px;
-    margin-top: 40px;
+    font-size: 60px; /* diminui o tamanho do fundo */
+    margin-left: 0; /* centraliza */
+    margin-top: 20px;
+    text-align: center;
   }
 
   .epilogue-bold-purple {
-    font-size: 20px;
-    margin-bottom: 50px;
-    margin-right: 0;
+    font-size: 22px; /* texto menor */
+    margin-bottom: 40px;
+    margin-right: 0; /* remove deslocamento */
     text-align: center;
-  }
-
-  .photo img {
-    max-width: 150px;
-  }
-
-  .photo-interacao {
-    flex-direction: column; /* empilha imagem e texto */
-    gap: 20px;
-  }
-
-  .carousel-item img {
-    width: 100px;
-    height: 100px;
   }
 }
 
-/* Telas muito pequenas, tipo celular vertical */
+/* Ajuste extra para celulares pequenos */
 @media (max-width: 480px) {
   .fundo-portfolio {
-    font-size: 35px;
-    margin-left: 10px;
-    margin-top: 20px;
+    font-size: 40px;
   }
 
-  .epilogue-bold-purple,
-  .epilogue-light,
-  .epilogue-bold {
+  .epilogue-bold-purple {
     font-size: 18px;
-    text-align: center;
-  }
-
-  .space {
-    margin: 50px;
   }
 }
 
